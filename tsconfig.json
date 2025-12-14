@@ -1,8 +1,9 @@
 {
   "compilerOptions": {
-    "target": "es6",
-    "module": "commonjs",
-    "outDir": "./dist",
+    "target": "ES2017",
+    "module": "ESNext",
+    "rootDir": "src",
+    "outDir": "dist",
     "strict": true
   },
   "include": ["src/**/*.ts"],
