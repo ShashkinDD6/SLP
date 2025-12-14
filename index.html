@@ -1,0 +1,70 @@
+<!DOCTYPE HTML>
+<!--
+	Aerial by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Aerial by HTML5 UP</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="css/main.css" />
+		<noscript><link rel="stylesheet" href="css/noscript.css" /></noscript>
+		<style>
+		/* Minimal styles for modal and posts used by the TS demo */
+		#modal { display: none; position: fixed; left: 50%; top: 50%; transform: translate(-50%, -50%); background: white; padding: 1.25rem; box-shadow: 0 8px 24px rgba(0,0,0,.3); z-index: 1000; max-width: 90%; }
+		#modal.show { display: block; }
+		#modal .close { cursor: pointer; margin-left: .5rem; }
+		#posts > div { margin: .75rem 0; padding: .75rem; background: rgba(255,255,255,.03); border-radius: 6px; opacity: 0; transform: translateY(10px); transition: opacity .4s ease, transform .4s ease; }
+		#posts > div.visible { opacity: 1; transform: translateY(0); }
+		#openModal { margin: .5rem; padding: .5rem 1rem; }
+		</style>
+	</head>
+	<body class="is-preload">
+		<div id="wrapper">
+			<div id="bg"></div>
+			<div id="overlay"></div>
+			<div id="main">
+
+				<!-- Header -->
+					<header id="header">
+						<h1>Adam Jensen</h1>
+						<button id="openModal">Open Modal</button>
+						<p>Security Chief &nbsp;&bull;&nbsp; Cyborg &nbsp;&bull;&nbsp; Never asked for this</p>
+						<nav>
+							<ul>
+								<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
+								<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
+								<li><a href="#" class="icon brands fa-dribbble"><span class="label">Dribbble</span></a></li>
+								<li><a href="#" class="icon brands fa-github"><span class="label">Github</span></a></li>
+								<li><a href="#" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
+							</ul>
+						</nav>
+					</header>
+
+				<!-- Footer -->
+					<footer id="footer">
+						<span class="copyright">&copy; Untitled. Design: <a href="http://html5up.net">HTML5 UP</a>.</span>
+					</footer>
+
+					<!-- Posts loaded from jsonplaceholder -->
+					<section id="posts" style="padding:1rem; max-width:800px; margin:0 auto;"></section>
+
+					<!-- Modal -->
+					<div id="modal" role="dialog" aria-modal="true">
+						<span id="closeModal" class="close">✕</span>
+						<h2>Demo Modal</h2>
+						<p>This is a demo modal opened by TypeScript code.</p>
+					</div>
+
+			</div>
+		</div>
+		<script>
+			window.onload = function() { document.body.classList.remove('is-preload'); }
+			window.ontouchmove = function() { return false; }
+			window.onorientationchange = function() { document.body.scrollTop = 0; }
+		</script>
+		<script src="dist/main.js"></script>
+	</body>
+</html>

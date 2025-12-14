@@ -1,0 +1,24 @@
+{
+  "name": "slp",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tsc"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ShashkinDD6/SLP.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ShashkinDD6/SLP/issues"
+  },
+  "homepage": "https://github.com/ShashkinDD6/SLP#readme",
+  "devDependencies": {
+    "typescript": "^5.9.3"
+  }
+}
